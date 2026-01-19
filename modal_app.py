@@ -9,11 +9,14 @@ from fastapi import FastAPI
 image = (
     modal.Image.debian_slim(python_version="3.12")
     # ✅ FONT FIX: Installs standard fonts so Docling doesn't fall back to bad OCR
-    .apt_install("libgl1", "libglib2.0-0", "fonts-liberation") 
+    .apt_install("libgl1", "libglib2.0-0", "fonts-liberation", "libxml2-dev", "libxslt-dev") 
     .pip_install(
         "pydantic<2.10",      # ✅ CRASH FIX: Prevents "bool is not iterable" error
         "gradio>=5.0",        # Gets the latest Gradio features
         "docling",
+        "opencv-python-headless",
+        "python-bidi",
+        "lxml",
         "rapidocr-onnxruntime",
         "pypdfium2",
         "langgraph",
@@ -46,7 +49,7 @@ app = modal.App(
 )
 
 # 3. The Main Function
-@app.function(image=image, gpu="T4", timeout=600)
+@app.function(image=image, gpu="L4", timeout=600)
 @modal.concurrent(max_inputs=100) # ✅ SCALING FIX: Correct decorator
 @modal.asgi_app()
 def run_gradio():
