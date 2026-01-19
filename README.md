@@ -53,6 +53,7 @@ This project is not just a wrapper around OpenAI. It is a full-stack engineering
 ```python
 # modal_app.py
 image = modal.Image.debian_slim().apt_install("libgl1", "fonts-liberation")
+```
 
 
 ### 2. "Dependency Hell" (Pydantic vs. Gradio)
@@ -69,27 +70,26 @@ If you want to run this on your own machine (requires NVIDIA GPU recommended):
    ```bash
    git clone [https://github.com/YOUR_USERNAME/docchat-portfolio.git](https://github.com/YOUR_USERNAME/docchat-portfolio.git)
    cd docchat-portfolio
+   ```
 
 2. **Set up environment**
    ```bash
    conda create -n docchat python=3.12
    pip install -r requirements.txt
+   ```
 
-   3. **Set API Keys**
-   Create a `.env` file in the root directory:
-   ```bash
-   GOOGLE_API_KEY=your_key_here
-   OPENAI_API_KEY=your_key_here
 
 3. **Set API Keys**
    Create a `.env` file in the root directory:
    ```bash
    GOOGLE_API_KEY=your_key_here
    OPENAI_API_KEY=your_key_here
+   ```
 
 4. **Run**
    ```bash
    python gradio_app.py
+   ```
 
 ## ☁️ Deployment (Modal)
 
@@ -99,7 +99,9 @@ To deploy your own instance to the cloud:
    ```bash
    pip install modal
    modal setup
+   ```
 
 2. **Deploy**
    ```bash
-   modal deploy modal_app.py   
+   modal deploy modal_app.py
+   ```
