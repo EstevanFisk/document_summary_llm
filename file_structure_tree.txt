@@ -1,0 +1,97 @@
+C:.
+│   .env
+│   1modal_app.py
+│   app.log
+│   gitignore
+│   gradio_app.py
+│   html for my site.txt
+│   modal_app.py
+│   README.md
+│   requirements.txt
+│   requirements_backup.txt
+│
+├───.gradio
+│       certificate.pem
+│
+├───agents
+│   │   relevance_checker.py
+│   │   research_agent.py
+│   │   verification_agent.py
+│   │   workflow.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           relevance_checker.cpython-312.pyc
+│           research_agent.cpython-312.pyc
+│           verification_agent.cpython-312.pyc
+│           workflow.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│
+├───chroma_db
+│   │   chroma.sqlite3
+│   │
+│   └───ec932d9a-8901-4181-8d6b-932754868b04
+│           data_level0.bin
+│           header.bin
+│           index_metadata.pickle
+│           length.bin
+│           link_lists.bin
+│
+├───config
+│   │   constants.py
+│   │   settings.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           constants.cpython-312.pyc
+│           settings.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│
+├───document_cache
+│       29ade2be2f75e33b94e88fc676a31aaaab205e4ae7f146bc284c57d93d858645.pkl
+│       52d8ca3ac93e88cef9944e1fd03b0e04aec5954495a8250fb2fadf8fa20a4dad.pkl
+│
+├───document_processor
+│   │   file_handler.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           file_handler.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│
+├───engine_room
+│   │   builder.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           builder.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│
+├───examples
+│       DeepSeek Technical Report.pdf
+│       google-2024-environmental-report.pdf
+│
+├───providers
+│   │   base.py
+│   │   gemini.py
+│   │   openai_fallback.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           base.cpython-312.pyc
+│           gemini.cpython-312.pyc
+│           openai_fallback.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│
+├───utils
+│   │   logging.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           logging.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│
+└───__pycache__
+        app.cpython-312.pyc
+        gradio_app.cpython-312.pyc
+        modal_app.cpython-312.pyc

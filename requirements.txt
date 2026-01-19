@@ -1,0 +1,25 @@
+# --- Interface ---
+gradio>=4.0.0
+modal
+
+# --- LLM Providers & Core AI ---
+google-generativeai
+langchain-google-genai
+openai
+langgraph
+pydantic-settings
+
+# --- Document Processing ---
+docling
+docling-core
+pypdfium2
+rapidocr-onnxruntime
+
+# --- Vector Search & Retrieval ---
+chromadb
+rank_bm25
+langchain-community
+
+# --- Utils ---
+loguru
+python-dotenv
