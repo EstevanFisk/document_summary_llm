@@ -22,7 +22,7 @@ class RetrieverBuilder:
 
         # Using the latest Gemini embedding model
         self.embeddings = GoogleGenerativeAIEmbeddings(
-            model="models/text-embedding-004",
+            model="models/gemini-embedding-001", # original: "models/text-embedding-004"
             google_api_key=settings.GOOGLE_API_KEY
         )
         logger.info("Gemini Embeddings initialized successfully.")
