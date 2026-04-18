@@ -1,4 +1,4 @@
-# DocChat: Serverless Agentic RAG with Docling & LangGraph 🐥
+# PolicyProof: Serverless Agentic RAG with Docling & LangGraph 🐥
 
 > **A "Serverless-First" document analysis agent that uses advanced layout-aware parsing (Docling) and graph-based orchestration (LangGraph) to perform deep research on complex technical reports.**
 
@@ -67,7 +67,7 @@ This application is deployed using a **Serverless Architecture (Modal)**.
 ---
 
 ## 🚀 Live Demo
-**Try the app here:** [DocChat Demo](https://estevanfisk.com/projects/document_summary_llm/demo/)
+**Try the app here:** [PolicyProof Demo](https://estevanfisk.com/projects/document_summary_llm/demo/)
 
 *(Note: The app runs on a cold-start architecture to save costs. Please allow 30-60 seconds for the first request as the container spins up.)*
 
@@ -112,13 +112,13 @@ If you want to run this on your own machine (requires NVIDIA GPU recommended):
 
 1. **Clone the repo**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/docchat-portfolio.git](https://github.com/YOUR_USERNAME/docchat-portfolio.git)
-   cd docchat-portfolio
+   git clone [https://github.com/YOUR_USERNAME/PolicyProof-portfolio.git](https://github.com/YOUR_USERNAME/PolicyProof-portfolio.git)
+   cd PolicyProof-portfolio
    ```
 
 2. **Set up environment**
    ```bash
-   conda create -n docchat python=3.12
+   conda create -n PolicyProof python=3.12
    pip install -r requirements.txt
    ```
 

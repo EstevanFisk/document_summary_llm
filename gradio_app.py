@@ -56,7 +56,7 @@ def main():
         container.style.marginBottom = '20px';
         container.style.color = '#eba93f';
 
-        var text = 'Welcome to DocChat 🐥!';
+        var text = 'Welcome to PolicyProof 🐥!';
         for (var i = 0; i < text.length; i++) {
             (function(i){
                 setTimeout(function(){
@@ -81,12 +81,12 @@ def main():
     }
     """
 
-    with gr.Blocks(theme=gr.themes.Citrus(), title="DocChat 🐥", css=css, js=js) as demo:
-        gr.Markdown("## DocChat: powered by Docling 🐥 and LangGraph", elem_classes="subtitle")
+    with gr.Blocks(theme=gr.themes.Citrus(), title="PolicyProof 🐥", css=css, js=js) as demo:
+        gr.Markdown("## PolicyProof: powered by Docling 🐥 and LangGraph", elem_classes="subtitle")
         gr.Markdown("# How it works ✨:", elem_classes="title")
         gr.Markdown("📤 Upload your document(s), enter your query then hit Submit 📝", elem_classes="text")
         gr.Markdown("Or you can select one of the examples from the drop-down menu, select Load Example then hit Submit 📝", elem_classes="text")
-        gr.Markdown("⚠️ **Note:** DocChat only accepts documents in these formats: '.pdf', '.docx', '.txt', '.md'", elem_classes="text")
+        gr.Markdown("⚠️ **Note:** PolicyProof only accepts documents in these formats: '.pdf', '.docx', '.txt', '.md'", elem_classes="text")
 
         # 2) Maintain the session state for retrieving doc changes
         session_state = gr.State({
